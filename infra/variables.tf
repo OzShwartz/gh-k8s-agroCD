@@ -35,7 +35,7 @@ variable "ec2_map" {
 #     mkdir actions-runner && cd actions-runner
 #     curl -o actions-runner-linux-x64-2.321.0.tar.gz -L https://github.com/actions/runner/releases/download/v2.321.0/actions-runner-linux-x64-2.321.0.tar.gz
 #     tar xzf ./actions-runner-linux-x64-2.321.0.tar.gz
-#     ./config.sh --url https://github.com/d4v5he/gh_arc --token BH74YWKX2QMP53C3273Y7OLHLPTNM --unattended --replace
+#     ./config.sh --url https://github.com/OzShwartz/gh-k8s-agroCD --token A2O2NWAPGFG7VYOH5QLJYKLHLQPUG --unattended --replace
 #     sudo ./svc.sh install
 #     sudo ./svc.sh start
 #   EOF
