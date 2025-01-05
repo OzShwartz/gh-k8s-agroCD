@@ -23,7 +23,8 @@ variable "sg_map" {
 variable "ec2_map" {
   default = {
         "GitHub_Runner" = {}
-        "K8S_Cluster" = {}
+        "K8S_Cluster" = { [30080]
+        }
     }
 }
 

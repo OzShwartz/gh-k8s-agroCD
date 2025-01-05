@@ -10,4 +10,4 @@ mongoExpress:
   servicePort: 8081
   nodePort: 30081
 
-mongodbUrl: "mongodb://mongodb-service:27017"
+mongodbUrl: "mongodb://mongodb-service:27017" # connection string for congif_map
