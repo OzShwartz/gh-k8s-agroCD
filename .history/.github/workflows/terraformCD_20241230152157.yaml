@@ -6,7 +6,7 @@ on:
     branches:
       - main
     paths:
-      - 'infra/**'  
+      - 'infra/**'
   pull_request:
     types: [ opened, synchronize, reopened, edited ]
     paths:
@@ -69,7 +69,7 @@ jobs:
           TF_LOG: ${{ inputs.TF_LOG }}
 
       - name: Upload Plan Artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v3
         with:
           name: tfplan
           path: infra/tfplan
@@ -82,7 +82,7 @@ jobs:
       - uses: trstringer/manual-approval@v1
         with:
           secret: ${{ secrets.GIT_PAT }}
-          approvers: Oz Shwartz
+          approvers: ${{ vars.TERRAFORM_MANUAL_APPROVALS }}
           minimum-approvals: 1
           issue-title: "Terraform Apply Approval Request"
           issue-body: "Please approve or deny the terraform apply command"
